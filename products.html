@@ -1,250 +1,116 @@
 <!DOCTYPE html>
 <html>
-<html lang="en">
 <head>
-	
 	<meta charset="utf-8">
-	<title> Papirus book store</title>
-	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Books</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-ul {
-  list-style-type: none;
-  left:0;
-  rigth: 0;
-  margin-top: 10px;
-  position: fixed;
-  padding: 0;
-  top: 0;
-  overflow: hidden;
-  background-color: white;
-  float: right;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #0000ff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: darkblue;
-}
-
-body {
-  margin: 0;
-  min-width: 250px;
-}
-
-/* Include the padding and border in an element's total width and height */
-* {
-  box-sizing: border-box;
-}
-
-/* Remove margins and padding from the list */
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-/* Style the list items */
-ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  list-style-type: none;
-  background: #eee;
-  font-size: 18px;
-  transition: 0.2s;
-  
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
-
-/* Darker background-color on hover */
-ul li:hover {
-  background: #ddd;
-}
-
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-
-/* Style the close button */
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-  background-color: #f44336;
-  color: white;
-}
-
-/* Style the header */
-.header {
-  background-color: blue;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
-}
-
-/* Clear floats after the header */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the input */
-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-}
-
-/* Style the "Add" button */
-.addBtn {
-  padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
-  color: #555;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
-}
-
-.addBtn:hover {
-  background-color: #bbb;
-}
-
-</style>
+	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 <ul>
   <li><a href="#home">Home</a></li>
-  <li><a href="#news">Bookstore</a></li>
+  <li><a href="#bookstore">Bookstore</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
+<form>
+   <p><input type="search" name="q" placeholder="Поиск по сайту"> 
+   <input type="submit" value="Найти"></p>
+  </form>
+	<h1 align="center"> Our <br> BOOKSTORE </h1>
+	<div class="dropdown">
+  <button class="mainmenubtn">Жанры</button>
+  <div class="dropdown-child">
+    <a href="http://www.вашдомен.ru/page1.html">Роман</a>
+    <a href="http://www.вашдомен.ru/page2.html">Фантастика 2</a>
+    <a href="http://www.вашдомен.ru/page3.html">Наука </a>
+    <a href="http://www.вашдомен.ru/page4.html">Рубеж 4</a>
+    <a href="http://www.вашдомен.ru/page5.html">Учебный материал 5</a>
+  </div>
+</div>
+	<div class="image-container">
+  <div class="text">progress</div>
+</div>
+<div class="selection">
+<form action="http://tokokoodemo.us/papirus/books/" method="get" role="search">
+	<input class="search" type="text" name="s"  placeholder="Find Products">
 
-	
-	<h1 align="center" style="font-size:40px; color: #0000ff; height: 500px;  "> Our <br> BOOKSTORE </h1>
+	<select class="sname" name="product_cat" >
+		<option value="0" selected="selected">All categories</option>
+		<option class="level-0" value="programming">Fantasy</option>
+		<option class="level-0" value="programming">Westerns</option>
+		<option class="level-0" value="javascript">Romance</option>
+		<option class="level-0" value="web-application">Thriller</option>
+		<option class="level-0" value="html5">Mystery</option>
+		<option class="level-0" value="seo">Detective story</option>
+		<option class="level-0" value="web-design">Fairy Tale</option>
+	</select>
 
-<h2 style="color:blue">COLLECTTION</h2>
+	<select class="aname" name="authors" >
+		<option value="0" selected="selected">All Authors</option>
+		<option class="level-0" value="thoriq-firdaus">Thoriq Firdaus</option>
+		<option class="level-0" value="tim-kadlec">Tim Kadlec</option>
+		<option class="level-0" value="steve-krug">Steve Krug</option>
+		<option class="level-0" value="susan-weinschenk">Susan Weinschenk</option>
+		<option class="level-0" value="austin-kleon">Austin Kleon</option>
+		<option class="level-0" value="ellen-lupton">Ellen Lupton</option>
+		<option class="level-0" value="patrick-mcneil">Patrick McNeil</option>
+		<option class="level-0" value="brian-miller">Brian Miller</option>
+		<option class="level-0" value="kyle-simpson">Kyle Simpson</option>
+		<option class="level-0" value="nicholas-c-zakas">Nicholas C. Zakas</option>
+	</select>
 
+	<input type="submit" class="button" value="Search">
 
-    <img src="cplusbook.png" alt="Фотография 1" width="330" height="350" hspace="10" vspace="10">
-    <img src="fjjf.jpg" alt="Фотография 2" width="330" height="350" hspace="10" vspace="10">
-    <img src="0000500192.jpg" alt="Фотография 3" width="330" height="350" hspace="10" vspace="10">
-    <img src="9780679783305.jpeg" alt="Фотография 4" width="330" height="350" hspace="10" vspace="10">
-    <img src="61Zi2jjgfIL.jpg" alt="Фотография 1" width="330" height="350" hspace="10" vspace="10">
-    <img src="978-5-8459-1650-1.jpg" alt="Фотография 2" width="330" height="350" hspace="10" vspace="10">
-    <img src="220px-TheSecretDiaryOfAdrianMole.jpg" alt="Фотография 3" width="330" height="350" hspace="10" vspace="10">
-    <img src="513XpOgZtiL.jpg" alt="Фотография 4" width="330" height="350" hspace="10" vspace="10">
+</form>
+ </div>
 
- <div id="myDIV" class="header">
-  <h2 style="margin:5px">Already read</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">Add</span>
+<div class="card">
+  <img src="71bfKSNKwZL.jpg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Bassket</button></p>
+</div><div class="card">
+  <img src="MV5BMjIyZGU4YzUtNDkzYi00ZDRhLTljYzctYTMxMDQ4M2E0Y2YxXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_.jpg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Basket</button></p>
+</div></div><div class="card">
+  <img src="caf59a6ecbbd61ade605f4593f2e37.jpg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Basket</button></p>
+</div></div><div class="card">
+  <img src="61Zi2jjgfIL.jpg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Basket</button></p></div><div class="card">
+  <img src="513XpOgZtiL.jpg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Basket</button></p>
+</div><div class="card">
+  <img src="9780679783305.jpeg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Basket</button></p>
+</div><div class="card">
+  <img src="cplusbook.png" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Basket</button></p>
+</div><div class="card">
+  <img src="71bfKSNKwZL.jpg" alt="Denim Jeans" style="width:100%">
+  <p class="price">$19.99</p>
+  <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+  <p><button>Add to Basket</button></p>
 </div>
 
-<ul id="myUL">
-  <li class="checked">Anna Karinina</li>
-</ul>
-
-<script>
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
-
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
-
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
-</script>
+</div>
 
 
-  
 
 
 </body>
