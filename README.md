@@ -1,6 +1,8 @@
 # WEBTech
 
-Team members: Abenova Aimira github.com/aimira11/web-project
+Team members: 
+
+Abenova Aimira github.com/aimira11/web-project
 
 Mustafa Meruert github.com/mustafameruert/WT2019
 
