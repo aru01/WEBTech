@@ -1,7 +1,7 @@
 ul {
   list-style-type: none;
   margin-top:10px;
-  margin-right: 50px;
+  margin-right: 100px;
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
@@ -14,7 +14,7 @@ li {
 
 li a {
   display: block;
-  color:  #0000ff;
+  color:   #0000e6;
   text-align: center;
   padding: 16px;
   text-decoration: none;
@@ -26,4 +26,123 @@ li a:hover {
 
 icon3{
 	margin-right: 100px;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  margin-left: 1450px;
+  margin-top: 10px;
+  margin-right: 100px;
+  position: relative;
+}
+.selection{
+  
+  background-color: white;
+  width:1700px;
+  height: 100px;
+
+}
+
+.search{
+
+    margin-left: 200px;
+    margin-top: 50px; 
+    border: none;
+    font-style: oblique;
+    font-size: 15px;
+    text-decoration-line: underline;
+    width:350px;
+    height: 30px;
+    color: #0000e6;
+}
+.sname{
+  border: none;
+    font-style: oblique;
+    font-size: 15px;
+    text-decoration-line: : underline;
+    width:350px;
+    height: 30px;
+}
+.aname{
+  border: none;
+    font-style: oblique;
+    font-size: 15px;
+    text-decoration-line: : underline;
+    width:350px;
+    height: 30px;
+}
+ .button{
+  margin-left: 3px;
+  font-size: 15px;
+  height: 30px;
+  width:80px;
+  color:#0000e6;
+  background-color: white;
+  border-color: #0000e6;
+ }
+ .bigdiv{
+  width:1500px;
+  height: 1300px;
+  background-color: #0000e6;
+   z-index: -100;
+
+ }
+ .best{
+    height: 200px;
+ }
+ ul2{
+  width: 1400px;
+  height: 200px;
+  list-style-type: none;
+  margin-top:50px;
+  margin-right: 50px;
+
+  padding: 0;
+  overflow: hidden;
+ 
+  float: right;
+}
+ li2 {
+  width: 200px; 
+  height:200px;
+  margin-left: 40px;
+
+}
+.para1{
+  margin-left: 700px;
+  color:white;
+}
+h1{
+  color:white;
+}
+.quote{
+  color:white;
+  margin-left: 200px;
+  font-size: 40px;
+}
+.quote2{
+  color:white;
+  margin-left: 400px;
+   font-size: 40px;
+  
+}
+.quote3{
+  color:white;
+  margin-left: 600px;
+   font-size: 40px;
+}
+.comup{
+  margin-left: 700px;
+  font-size: 20px;
+  color:  #0000e6;
+}
+.BL{
+  margin-left: 650px;
+  font-size: 30px;
+  color:  #0000e6;
+}
+
+.end{
+  margin-left: 400px;
+  margin-top: 50px;
 }
