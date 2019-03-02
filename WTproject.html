@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Books</title>
+
+
+</head>
+
+<body>
+<!--<h1>Papirus book store</h1>-->
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Bookstore</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+<img class="icon3" src="C:\Users\User\Desktop\WT2019\icon3.png" width="50" height="50">
+<img src="C:\Users\User\Desktop\WT2019\ph2.png" width="1500" height="600">
+<form action="http://tokokoodemo.us/papirus/books/" method="get" role="search">
+	<input type="text" name="s" placeholder="Find Products">
+	<select name="product_cat" id="product_cat" class="postform">
+		<option value="0" selected="selected">All categories</option>
+		<option class="level-0" value="programming">Fantasy</option>
+		<option class="level-0" value="programming">Westerns</option>
+		<option class="level-0" value="javascript">Romance</option>
+		<option class="level-0" value="web-application">Thriller</option>
+		<option class="level-0" value="html5">Mystery</option>
+		<option class="level-0" value="seo">Detective story</option>
+		<option class="level-0" value="web-design">Fairy Tale</option>
+	</select>
+
+	<select name="authors" id="authors" class="postform">
+		<option value="0" selected="selected">All Authors</option>
+		<option class="level-0" value="thoriq-firdaus">Thoriq Firdaus</option>
+		<option class="level-0" value="tim-kadlec">Tim Kadlec</option>
+		<option class="level-0" value="steve-krug">Steve Krug</option>
+		<option class="level-0" value="susan-weinschenk">Susan Weinschenk</option>
+		<option class="level-0" value="austin-kleon">Austin Kleon</option>
+		<option class="level-0" value="ellen-lupton">Ellen Lupton</option>
+		<option class="level-0" value="patrick-mcneil">Patrick McNeil</option>
+		<option class="level-0" value="brian-miller">Brian Miller</option>
+		<option class="level-0" value="kyle-simpson">Kyle Simpson</option>
+		<option class="level-0" value="nicholas-c-zakas">Nicholas C. Zakas</option>
+	</select>
+	<input type="submit" class="button" value="Search">
+	<input type="hidden" name="post_type" value="product">
+</form>
+
+<div style="background-color:grey;color:white;padding:20px;">
+  <h1 align="center">Welcome to Papirus book store</h1>
+  <p1 align="center">Tons of book collections you can choose from. Books that don’t suck, we ensure the quality of our books
+the best you can find anywhere.</p2>
+</div>
+  <h1 align="center"><strong>Bestsellers</strong></h1>
+<div>
+	<img src="C:\Users\User\Desktop\WT2019\Abay.jpg" width="200" height="200" >
+	<img src="C:\Users\User\Desktop\WT2019\Forrest.jpg" width="200" height="200">
+	<img src="C:\Users\User\Desktop\WT2019\Harry.jpg" width="200" height="200">
+	<img src="C:\Users\User\Desktop\WT2019\Hobbit.jpg" width="200" height="200">
+	<img src="C:\Users\User\Desktop\WT2019\Lion.jpg" width="200" height="200">
+	<img src="C:\Users\User\Desktop\WT2019\Prince.jpg" width="200" height="200">
+</div>
+
+	<h1 align="center"><small>This month's</small><strong> RECOMMENDED BOOKS</strong></h1>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="C:\Users\User\Desktop\WT2019\brave.jpg" style="width:100%">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="C:\Users\User\Desktop\WT2019\great.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="C:\Users\User\Desktop\WT2019\lev.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="C:\Users\User\Desktop\WT2019\lonely.jpg" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="C:\Users\User\Desktop\WT2019\nine.jpg" style="width:100%">
+  <div class="text">Caption Five </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<p2  align="center">Coming up</p2>
+<h2  align="center">BOOK LAUNCH</h2>
+<div>
+	<img src="C:\Users\User\Desktop\WT2019\ailoo.png" style="width:500px;height:600px;" align="right">
+	<h1>Introducing The Land of AILOO</h1>
+	<p1> by Mark Walker</p1>
+	<br>
+	<br>
+	<p2> When</p2>
+	<br>
+	<p3> _____ </p3>
+	<br>
+	<br>
+	<p4> Mar 22,2019,7:00 PM </p4>
+	<br>
+	<br>
+	<p5> Where </p5>
+	<br>
+	<br>
+	<p6> _____</p6>
+	<br>
+	<br>
+	<p7> Tole bi 59,Almaty,Kazakhstan </p7>
+	<br>
+	<br>
+	<button>Register now</button>
+
+</div>
+</body>
+
+</html>
