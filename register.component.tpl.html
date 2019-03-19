@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<div>
+			<form class="form-horizontal" name="form" #f="ngForm">
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">First Name</label>
+					
+					<div class="col-xs-4">
+						<input type="text" class="form-control" name="firstName" placeholder="firstName" [(ngModel)]="registerUser.firstName" >
+						
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">Last Name</label>
+					<div class="col-xs-4">
+						<input type="text" class="form-control" placeholder="Last Name" name="lastName" [(ngModel)]="registerUser.lastName">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">Email</label>
+					<div class="col-xs-4">
+						<input type="text" class="form-control" placeholder="Email" name="email" [(ngModel)]="registerUser.email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">Password</label>
+					<div class="col-xs-4">
+						<input type="password" class="form-control" placeholder="Password" name="password" [(ngModel)]="registerUser.password">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">Age</label>
+					<div class="col-xs-4">
+						<input type="text" class="form-control" placeholder="Age" [(ngModel)]="registerUser.age">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">Country</label>
+					<div class="col-xs-4">
+						<select class="form-control" >
+							<option value="" >Select Your Country</option>
+							<option value="" *ngFor="#country of countries" >{{country}}</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2">States</label>
+					<div class="col-xs-4">
+						<select class="form-control" >
+							<option value="">Please Select</option>
+						</select>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label for="inputEmail" class="control-label col-xs-2" >Phone Number</label>
+					
+				</div>
+				
+				<div class="form-group">
+					<label for="inputPassword" class="control-label col-xs-2">Gender</label>
+					<div class="col-xs-4">
+						<input type="radio" value="M" name="gender" [(ngModel)]="registerUser.gender">M
+						<input type="radio" value="F" name="gender" [(ngModel)]="registerUser.gender">F
+						<input type="radio" value="NA" name="gender" [(ngModel)]="registerUser.gender">Don't Reveal
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-xs-offset-2 col-xs-4">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"  (click)="checkFields()"> I Agree Terms</label>
+						</div>
+					</div>
+				</div>
+				<div class=" form-group ">
+					<div class="col-xs-offset-2 col-xs-4 ">
+						<button type="button " class="btn btn-primary"  (click)="register()">Register</button>
+					</div>
+				</div>
+				
+				
+				
+			</form>
+			
+		</div>
+
+	</body>
+</html>
