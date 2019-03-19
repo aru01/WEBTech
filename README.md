@@ -1,13 +1,27 @@
-# WEBTech
+# MyFirstApp
 
-Team members: 
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
-Abenova Aimira github.com/aimira11/web-project
+## Development server
 
-Mustafa Meruert github.com/mustafameruert/WT2019
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Tutkenova Aruzhan github.com/aru01/WEBTech
+## Code scaffolding
 
-The organization of an effective website is the first key to success in any online store, regardless of the niche. But in the case of the online bookstore interface is especially important, as books are still often chosen by the cover and a brief description. The Internet means that the buyer of this possibility, therefore, our task at this stage is to make the site and, in particular, cards of the product as much as possible eloquent.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Creating a cool product catalog is the most time-consuming process. Each product should be presented with an extended description, scanned image of the cover, typical data about the book. So significantly increase the attractiveness of goods in your online store.
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
