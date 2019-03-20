@@ -1,0 +1,10 @@
+.footer {
+    margin-top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(35, 55, 90);
+    color: #fff;
+    font-size: 23px;
+    padding-bottom: 0;
+  }
